@@ -1,16 +1,21 @@
 # coolab_me
 
-A new Flutter project.
+My Flutter project for displaying flutter/dart concept.
 
-## Getting Started
+Idea: A note/ todo/ whistlist/ checklist or any other note forms with a catch, allowing live collaboration with other user/ guess user.
 
-This project is a starting point for a Flutter application.
+### App roadmap
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [ ] Mvp page UI layouts for mobile application.
+- [ ] User sign up/in feature.
+- [ ] Developer demonstarion (pre-created user) feature.
+- [ ] #1st feature: Todo logic (without live collaboration).
+- [ ] Todo live collaboration feature.
+- [ ] Add page UI for web application.
+- [ ] Deep linking (guest url).
+- [ ] Backend/ database for user data.
+- [ ] Backend/ database for the document.
+- [ ] Backend implementation: (Firebase) security rules, allowing specific user to collaborate.
+- [ ] Improve UX: Add Animations.
+- [ ] [future] #2nd feature: Collective wish/order/list.
+- [ ] [future] Integration with of major e-commerce (e.g. Shopee)/ Social media (e.g. Pinterest) API.
