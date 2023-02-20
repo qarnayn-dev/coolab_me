@@ -114,7 +114,7 @@ class AppTheme {
   static final ColorScheme colorScheme = ColorScheme(
     brightness: _brightness,
     primary: primary,
-    onPrimary: nWhite,
+    onPrimary: Color.alphaBlend(AppTheme.nBlack.withOpacity(0.6), AppTheme.primary),
     secondary: secondary,
     onSecondary: nWhite,
     error: semanticError,
@@ -166,7 +166,7 @@ class AppTheme {
     contentPadding: const EdgeInsets.symmetric(horizontal: 6),
     hintStyle: const TextStyle(fontSize: 15),
     border: OutlineInputBorder(
-      borderSide: BorderSide(width: 1.6, color: primary[400]!),
+      borderSide: const BorderSide(width: 1.6, color: primaryS3),
       borderRadius: BorderRadius.circular(8),
     ),
   );

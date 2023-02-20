@@ -48,9 +48,9 @@ class CtaButton extends StatelessWidget {
               onPressed: onClick,
               style: TextButton.styleFrom(
                 padding: _padding,
-                backgroundColor: AppTheme.primary[100],
-                primary: Colors.white,
-                textStyle: const TextStyle(fontWeight: FontWeight.w400),
+                backgroundColor: AppTheme.primary,
+                primary: AppTheme.nBlack.withOpacity(0.56),
+                textStyle: AppTheme.subtitleStyle.copyWith(fontWeight: FontWeight.bold),
               ),
               child: Text(text),
             ),

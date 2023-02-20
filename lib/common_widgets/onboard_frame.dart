@@ -28,7 +28,7 @@ class OnboardFrame extends StatelessWidget {
                 child: Container(
                   width: double.maxFinite,
                   alignment: alignment ?? Alignment.topCenter,
-                  height: 420,
+                  height: 500,
                   padding: const EdgeInsets.fromLTRB(32, 32, 32, 20),
                   child: child,
                 ),

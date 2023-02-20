@@ -1,3 +1,4 @@
+import 'package:coolab_me/repos/signin/signin_view.dart';
 import 'package:flutter/material.dart';
 
 /// The root of the application.
@@ -7,6 +8,13 @@ class AppRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return _TempPageDisplay.pages[0];
   }
+}
+
+/// Just for temporary place for pages.
+class _TempPageDisplay {
+  static final List<Widget> pages = [
+    SigninView(),
+  ];
 }
