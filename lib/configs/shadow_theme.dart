@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 /// A Tailwind inspired shadow theme.
 class ShadowTheme {
-  static final Color colorBase = Color.alphaBlend(Colors.black.withOpacity(0.8), AppTheme.primary).withOpacity(0.1);
+  static final Color colorBase = Color.alphaBlend(Colors.black.withOpacity(0.8), AppTheme.primary).withOpacity(0.2);
 
-  static Color get colorSM => Color.alphaBlend(Colors.black.withOpacity(0.8), AppTheme.primary).withOpacity(0.3);
+  static Color get colorSM => Color.alphaBlend(Colors.black.withOpacity(0.7), AppTheme.primary).withOpacity(0.2);
   static Color get colorMD => Color.alphaBlend(Colors.black.withOpacity(0.8), AppTheme.primary).withOpacity(0.4);
   static Color get colorLG => Color.alphaBlend(Colors.black.withOpacity(0.8), AppTheme.primary).withOpacity(0.6);
 
