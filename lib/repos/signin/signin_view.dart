@@ -1,11 +1,11 @@
 import 'package:coolab_me/common_widgets/cta_button.dart';
-import 'package:coolab_me/common_widgets/hover_color_effect.dart';
 import 'package:coolab_me/common_widgets/line_with_text_seperator.dart';
 import 'package:coolab_me/common_widgets/onboard_frame.dart';
 import 'package:coolab_me/common_widgets/textfield_with_title.dart';
 import 'package:coolab_me/configs/app_theme.dart';
-import 'package:coolab_me/configs/shadow_theme.dart';
+import 'package:coolab_me/routing/routes_name.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../common_widgets/signup_with_other_button.dart';
 
@@ -62,12 +62,29 @@ class SigninView extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  CtaButton(
-                    onClick: () {
-                      // TODO: login
-                    },
-                    text: "Login",
-                  )
+                  Row(
+                    children: [
+                      Expanded(
+                        child: CtaButton(
+                          onClick: () {
+                            // TODO: login
+                          },
+                          text: "Login",
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: CtaButton(
+                          onClick: () {
+                            // TODO: signup page
+                            GoRouter.of(context).push(RouteNames.signup);
+                          },
+                          text: "Signup",
+                          forSecondary: true,
+                        ),
+                      )
+                    ],
+                  ),
                 ],
               ),
             ),
