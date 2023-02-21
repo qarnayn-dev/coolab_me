@@ -79,7 +79,7 @@ class AppTheme {
     colorScheme: colorScheme,
     dividerTheme: dividerTheme,
     dialogTheme: dialogTheme,
-    pageTransitionsTheme: pageTransitionsTheme,
+    // pageTransitionsTheme: pageTransitionsTheme,
   );
 
   static const TextStyle headerStyle = TextStyle(color: nBlack, fontSize: 20, fontWeight: FontWeight.normal);
@@ -197,8 +197,8 @@ class AppTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
   );
 
-  static const PageTransitionsTheme pageTransitionsTheme = PageTransitionsTheme(builders: {
-    // TargetPlatform.macOS: CustomFadeTransitionBuilder(),
-    // TargetPlatform.windows: CustomFadeTransitionBuilder(),
-  });
+  // static const PageTransitionsTheme pageTransitionsTheme = PageTransitionsTheme(builders: {
+  //   // TargetPlatform.macOS: CustomFadeTransitionBuilder(),
+  //   // TargetPlatform.windows: CustomFadeTransitionBuilder(),
+  // });
 }
