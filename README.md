@@ -4,6 +4,8 @@ My Flutter project for displaying flutter/dart concept.
 
 Idea: A note/ todo/ whistlist/ checklist or any other note forms with a catch, allowing live collaboration with other user/ guess user.
 
+Disclaimer: _Some of the codes commited are a bit messy (especially after some initial/ pre feature release) and will be cleaned during the cleanup/ documenting. For professional work, I write codes to its own branch (feature-first approach), and only make a pull request after completing cleanup/ documenting on the feature._
+
 ### App roadmap
 
 - [ ] Mvp page UI layouts for mobile application.
