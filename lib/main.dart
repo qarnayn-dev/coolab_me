@@ -1,3 +1,6 @@
+import 'package:coolab_me/utils/responsive_web.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+
 import 'package:coolab_me/configs/app_theme.dart';
 import 'package:coolab_me/routing/routing_configs.dart';
 import 'package:flutter/material.dart';
@@ -10,13 +13,34 @@ void main() {
   runApp(const ProviderScope(child: MyApp()));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerStatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    final GoRouter router = RoutingConfigs().router;
+  ConsumerState<MyApp> createState() => _MyAppState();
+}
 
+class _MyAppState extends ConsumerState<MyApp> {
+  late final GoRouter router;
+  late final ResponsiveWebConfigs webConfig;
+
+  @override
+  void initState() {
+    super.initState();
+    router = RoutingConfigs().router;
+    webConfig = ResponsiveWebConfigs();
+    // For web, listen to the 'resizing' changes.
+    if (kIsWeb) webConfig.listenToSizeChanges(context, ref);
+  }
+
+  @override
+  void dispose() {
+    webConfig.removeListener();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'coolab_me',
       theme: AppTheme.themeData,
